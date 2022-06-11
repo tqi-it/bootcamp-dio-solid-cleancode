@@ -1,7 +1,7 @@
 package br.com.tqi.cleancodesolid.cleancode.designrules.lod;
 
 class PostalCode {
-    private String number = "38400-000";
+    private final String number = "38400-000";
 
     public String getNumber() {
         return number;
@@ -9,7 +9,7 @@ class PostalCode {
 }
 
 class Address {
-    private PostalCode postalCode = new PostalCode();
+    private final PostalCode postalCode = new PostalCode();
 
     public PostalCode getPostalCode() {
         return postalCode;
@@ -21,7 +21,7 @@ class Address {
 }
 
 class Person {
-    private Address address = new Address();
+    private final Address address = new Address();
 
     public Address getAddress() {
         return address;
